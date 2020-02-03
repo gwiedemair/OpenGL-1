@@ -1,15 +1,16 @@
 #include "GLCore.h"
-#include "ExampleLayer.h"
+#include "LearnOpenGLLayer.h"
 
 using namespace GLCore;
+
 
 class Example : public Application
 {
 public:
 	Example()
-		: Application("OpenGL Examples")
+		: Application("OpenGL Examples", SCR_WIDTH, SCR_HEIGHT)
 	{
-		PushLayer(new ExampleLayer());
+		PushLayer(new LearnOpenGLLayer());
 	}
 };
 
